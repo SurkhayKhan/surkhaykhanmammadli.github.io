@@ -1,0 +1,143 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: #ecf0f1;
+}
+
+a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Header styles */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section styles */
+section#projects {
+    background: transparent;
+    padding: 40px;
+    width: 80%;
+    max-width: 1200px; /* Maximum width of the projects container */
+    margin: auto; /* Centering the section */
+}
+
+/* Project article styles */
+article {
+    background: #fff;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+article h3 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+article time {
+    font-style: italic;
+    color: #888;
+    display: block;
+    margin-bottom: 15px;
+}
+
+article p {
+    font-size: 1em;
+    line-height: 1.7;
+    color: #666;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header nav ul li {
+        padding: 0 5px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section#projects {
+        padding: 20px;
+        width: 95%;
+    }
+
+    article {
+        padding: 20px;
+    }
+}
